@@ -26,9 +26,12 @@ jobs:
     # powershell requires -and instead of &&
     - uses: actions/checkout@v1
     - name: configure
-      run: mkdir "build" -and cd build -and cmake ..
+      run: mkdir "build" && cd build && cmake ..
+      shell: cmd
     - name: build
-      run: cd build -and make
+      run: cd build && make
+      shell: cmd
     - name: run
-      run: cd build -and ./gactions
+      run: cd build &&./gactions
+      shell: cmd
 
