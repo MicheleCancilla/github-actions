@@ -20,11 +20,12 @@ jobs:
       matrix:
         os: [windows-latest, windows-2016]
     steps:
+    # powershell requires -and instead of &&
     - uses: actions/checkout@v1
     - name: configure
-      run: mkdir build && cd build && cmake ..
+      run: mkdir build -and cd build -and cmake ..
     - name: build
-      run: cd build && make
+      run: cd build -and make
     - name: run
-      run: cd build && ./gactions
+      run: cd build -and ./gactions
 
