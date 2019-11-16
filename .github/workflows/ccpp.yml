@@ -32,6 +32,6 @@ jobs:
       run: cmake --build build --config Release
       shell: cmd
     - name: run
-      run: cd build &&./gactions
+      run: cd build && dir && gactions
       shell: cmd
 
