@@ -13,7 +13,7 @@ jobs:
     - name: configure
       run: mkdir build && cd build && cmake ..
     - name: build
-      run: cd build && make
+      run: cmake --build build --config Release
     - name: run
       run: cd build && ./gactions
       
@@ -29,7 +29,7 @@ jobs:
       run: mkdir "build" && cd build && cmake ..
       shell: cmd
     - name: build
-      run: cd build && make
+      run: cmake --build build --config Release
       shell: cmd
     - name: run
       run: cd build &&./gactions
