@@ -14,5 +14,5 @@ jobs:
     - name: build
       run: cd build && make
     - name: run
-      run: cd build && ls
+      run: cd build && ls bin
 
