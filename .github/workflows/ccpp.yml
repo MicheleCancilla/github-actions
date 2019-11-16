@@ -15,7 +15,7 @@ jobs:
       run: cd build && ./gactions
       
   build-windows:
-    runs-on: [windows-2019, windows-latest, windows]
+    runs-on: windows
     steps:
     - uses: actions/checkout@v1
     - name: configure
