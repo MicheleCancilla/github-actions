@@ -9,8 +9,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: ghaction-cmake
-      uses: lpenz/ghaction-cmake@v0.1
-    - name: make
+    - name: configure
+      run: mkdir build && cd build && cmake ..
+    - name: build
       run: make
+    - name: run
+      run: ./gactions
 
