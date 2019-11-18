@@ -6,8 +6,8 @@
 [![Actions Status](https://github.com/MicheleCancilla/github-actions/workflows/.github/workflows/linux.yml/badge.svg)](https://github.com/MicheleCancilla/github-actions/actions)
 
 
-[![Actions Status](https://github.com/MicheleCancilla/github-actions/workflows/push-build-linux/badge.svg)](https://github.com/MicheleCancilla/github-actions/actions)
+[![Actions Status](https://github.com/MicheleCancilla/github-actions/workflows/linux/badge.svg)](https://github.com/MicheleCancilla/github-actions/actions)
 
-[![Actions Status](https://github.com/MicheleCancilla/github-actions/workflows/push-build-windows/badge.svg)](https://github.com/MicheleCancilla/github-actions/actions)
+[![Actions Status](https://github.com/MicheleCancilla/github-actions/workflows/windows/badge.svg)](https://github.com/MicheleCancilla/github-actions/actions)
 
 
