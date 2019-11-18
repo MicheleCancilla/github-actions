@@ -1,4 +1,4 @@
-name: push-build
+name: push-build-windows
 
 on: [push]
 
