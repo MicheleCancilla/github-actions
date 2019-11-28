@@ -1,0 +1,21 @@
+name: linux
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    container:
+        image: docker://pritt/opencv-small:latest
+    strategy:
+      matrix:
+      #  os: [ubuntu-latest,ubuntu-18.04,ubuntu-16.04,macOS-latest,macos]
+        os: [ubuntu-18.04]
+    steps:
+    - uses: actions/checkout@v1
+    - name: configure
+      run: mkdir build && cd build && cmake ..
+    - name: build
+      run: cmake --build build --config Release
+    - name: run
+      run: cd build && ./gactions
